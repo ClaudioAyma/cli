@@ -23,9 +23,13 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Application Title</span>
+      <span>Teleshopping Login</span>
     </mat-toolbar>
-    <mat-card class="example-card">
+    
+    <mat-grid-list cols="1" prowHeight="100px">
+      
+      <mat-grid-tile colspan=1 rowspan=1 >
+        <mat-card class="example-card">
       <mat-card-header>
         <mat-card-title>Logueate</mat-card-title>
       </mat-card-header>
@@ -54,6 +58,8 @@
         <button mat-raised-button (click)="login()" color="primary">Login</button>
       </mat-card-actions>
     </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
     <mat-grid-list cols="5" rowHeight="100px">
       <mat-grid-tile [colspan]="1" rowspan="1" style.background="lightblue">
         1
@@ -70,4 +76,3 @@
     </mat-grid-list>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
